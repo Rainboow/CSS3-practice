@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>大风车</title>
+	<style type="text/css">
+		.box{
+			width: 400px;
+			height: 400px;
+			margin: 200px auto;
+			transition: 5s linear;
+		}
+		.box div{
+			width: 180px;
+			height: 180px;
+			margin: 10px;
+			border: 6px solid #0ff;
+			box-sizing: border-box;
+			float: left;
+			background: #ff0000;
+		}
+		.box div:nth-child(1),.box div:nth-child(4){
+			border-radius: 0 76%;
+
+		}
+		.box div:nth-child(2),.box div:nth-child(3){
+			border-radius: 76% 0;
+		}
+		.box:hover{
+			-webkit-transform: rotate(720deg);
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	p{
+		height:30px;
+		line-height: 30px;
+		border:1px solid #000;
+		font-size: 12px;
+	}
+	p a{
+		height: 30px;
+		line-height: 30px;
+		padding-left: 22px;
+		background: url(img/text.gif) no-repeat 3px center;
+		display: inline-block;
+	}
+	p a[href*="ppt"]{
+		background-image: url(img/ppt.gif);
+	}
+	p a[href*="pdf"]{
+		background-image: url(img/swf.gif);
+	}
+	p a[href*="world"]{
+		background-image: url(img/w.gif);
+	}
+	p a[href*="exl"]{
+		background-image: url(img/x.gif);
+	}
+	/*
+		E[attr]指定属性名，没指定属性值
+		E[attr=value] 指定属性名，并制订了属性值
+		E[attr~=value] 词列表中包含属性值
+		E[attr^=value]指定属性值开头的
+		E[attr$=value]指定属性值结尾的
+		E[attr*=value] 所有包含相同的
+		E[attr|=value] 所有包含开头- 或者只有开头的
+	 */
+	</style>
+</head>
+<body>
+	<p><a href="http://www.baidu.com/text/">妙味课堂</a></p>
+	<p><a href="http://www.baidu.com/ppt/">妙味课堂</a></p>
+	<p><a href="http://www.baidu.com/pdf/">妙味课堂</a></p>
+	<p><a href="http://www.baidu.com/world/">妙味课堂</a></p>
+	<p><a href="http://www.baidu.com/exl/">妙味课堂</a></p>
+</body>
+</html>

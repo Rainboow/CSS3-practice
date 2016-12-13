@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.box{
+			width: 400px;
+			height: 400px;
+			margin: 100px auto;
+			border: 1px solid #000;
+			-webkit-transform-style: preserve-3d;  /*建立3d空间*/
+			-webkit-perspective: 150px;
+		}
+		.div{
+			width: 200px;
+			height: 200px;
+			background: #ff0000;
+			margin: 100px;
+			transition: 1s;
+		}
+		.box:hover .div{
+			-webkit-transform: rotateX(-360deg);
+
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="div"></div>
+	</div>
+</body>
+</html>

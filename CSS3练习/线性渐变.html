@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>线性渐变</title>
+	<style>
+		.wrap{
+			width: 200px;
+			height: 30px;
+			border: 1px solid #000;
+			border-radius: 15px;
+			overflow: hidden;
+		}
+		.box{
+			width: 400px;
+			height: 30px;
+			background: -webkit-repeating-linear-gradient(20deg,green 0,green 10px,#fff 10px,#fff 20px);
+			transition: 3s;
+		}
+		.wrap:hover .box{
+			margin-left: -100px;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="box"></div>
+	</div>
+</body>
+</html>
